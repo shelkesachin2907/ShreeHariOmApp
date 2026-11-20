@@ -1,6 +1,6 @@
-# Shree Hari Om App
+# श्रीHariOm App
 
-Shree Hari Om App is an Android application for **Shree Hari Om Enterprises**, providing an interface for AC servicing, repairs, installation, rental and purchase options, AMC plans, sell/exchange inquiries, and invoice or quotation generation.
+श्रीHariOm App is an Android application for **श्रीHariOm Enterprises**, providing an interface for AC servicing, repairs, installation, rental and purchase options, AMC plans, sell/exchange inquiries, and invoice or quotation generation.
 
 The app uses an Android `WebView` to display the complete user interface from `app/src/main/assets/index.html`.
 
@@ -76,13 +76,7 @@ Select an emulator or connected Android device, then run:
 ./gradlew assembleDebug
 ```
 
-The debug APK will be generated at:
-
-```text
-app/build/outputs/apk/debug/app-debug.apk
-```
-
-You can also install and launch the app from Android Studio using the **Run** action.
+The debug APK will be generated at `app/build/outputs/apk/debug/app-debug.apk`.
 
 ## Build a Release APK
 
@@ -90,11 +84,7 @@ You can also install and launch the app from Android Studio using the **Run** ac
 ./gradlew assembleRelease
 ```
 
-The unsigned release APK will be generated under:
-
-```text
-app/build/outputs/apk/release/
-```
+The unsigned release APK will be generated under `app/build/outputs/apk/release/`.
 
 ## Application Configuration
 
@@ -104,35 +94,17 @@ app/build/outputs/apk/release/
 - **Target SDK:** 34
 - **Minimum SDK:** 24
 
-Update these values in `app/build.gradle.kts` when preparing the app for publication.
-
 ## Permissions
 
-The app declares the following permissions:
-
-- Internet access
-- Network state access
-- Phone calling
-
-The telephony feature is optional and is marked with `android:required="false"` so the app can also run on non-phone devices.
+The app declares Internet, network-state, and phone-calling permissions. Telephony is optional, so the app can also run on non-phone devices.
 
 ## Current Status
 
 This project is a functional frontend prototype. Service bookings, sales inquiries, and generated documents currently use local browser logic and alert confirmations; they do not yet save data to a backend or send messages to an external server.
 
-Before production use, add:
-
-- Backend/API integration
-- Persistent customer and document storage
-- Authentication for staff and customers
-- Real payment processing
-- Server-side GST and invoice validation
-- Input validation and secure handling of customer data
-- Confirmation notifications by SMS, WhatsApp, or email
+Before production use, add backend/API integration, persistent storage, authentication, payment processing, server-side GST and invoice validation, secure input handling, and SMS/WhatsApp/email notifications.
 
 ## Contributing
-
-Contributions are welcome.
 
 1. Fork the repository
 2. Create a feature branch
